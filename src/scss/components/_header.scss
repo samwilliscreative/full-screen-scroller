@@ -18,12 +18,12 @@
     opacity: 1;
     z-index: 101;
     overflow: hidden;
-    transition: all 1200ms ease;
+    transition: all 1200ms ease; // This is the speed in which your element will animate to full screen
 
     &.active {
-        max-height: 100% !important;
-        background-color: rgba(0, 0, 0, 0.8);
-        overflow-y: scroll;
+        max-height: 100% !important; // TODO: Apply this style with JS
+        background-color: rgba(0, 0, 0, 0.8); // This is the activecolour so that you can see content isn't being scrolled in the background
+        overflow-y: scroll; // TODO: Apply this style with JS
     }
 
     &__container {
