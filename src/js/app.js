@@ -4,8 +4,10 @@ var fssInit = function(userOptions){
         wrapper: userOptions.wrapper ? $(userOptions.wrapper) : $('.fss-wrapper'),
         inner: userOptions.inner ? $(userOptions.inner) : $('.fss-inner'),
         toggle: userOptions.toggle ? $(userOptions.toggle) : $('.fss-toggle'),
-        headerHeight: userOptions.headerHeight ? userOptions.headerHeight : null
+        headerHeight: userOptions.headerHeight ? userOptions.headerHeight : null // TODO: Test with passing in values
     }
+
+    
 
     if (!fssOptions.headerHeight) {
         fssOptions.headerHeight = fssOptions.wrapper.outerHeight(true);
@@ -39,7 +41,8 @@ $(document).ready(function(){
 
     fssInit({
         wrapper: '.js-header',
-        inner: '.js-nav'
+        inner: '.js-nav',
+        headerHeight: 62
     });
 
 });
