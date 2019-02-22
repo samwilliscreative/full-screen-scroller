@@ -1,0 +1,25 @@
+// Target Internet Explorer only
+@mixin media-ie() {
+  @media screen and (min-width:0\0) and (min-resolution:+72dpi), \0screen\,screen\9 {
+    @content;
+  }
+}
+
+// Target Microsoft Edge only
+@mixin media-edge() {
+  @supports (-ms-ime-align: auto) {
+    @content;
+  }
+}
+
+// Target both Internet Exporer and Edge
+@mixin media-ms() {
+  @at-root {
+    @include media-ie() {
+        @content;
+    }
+    @include media-edge() {
+      @content;
+    }
+  }
+}

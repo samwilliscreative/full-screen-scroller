@@ -1,0 +1,15 @@
+// BEM element
+// Current selector will be appended with $name and any content applied within
+@mixin element($name) {
+  @at-root #{&}__#{$name} {
+    @content;
+  }
+}
+
+// BEM modifier
+// Current selector will be appended with $name and any content applied within
+@mixin modifier($name) {
+  @at-root #{&}--#{$name} {
+    @content;
+  }
+}
