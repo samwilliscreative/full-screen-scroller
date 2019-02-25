@@ -1,12 +1,12 @@
 {
-  "name": "linney-mini-skeleton",
+  "name": "full-screen-scroller",
   "version": "1.0.0",
-  "description": "A barebones project for mini projects",
+  "description": "A jQuery plugin for making a togglable full screen scrolling element",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Linney",
+  "author": "Sam Willis",
   "license": "UNLICENSED",
   "dependencies": {
     "gulp": "^4.0.0",
